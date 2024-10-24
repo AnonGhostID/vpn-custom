@@ -6,12 +6,6 @@ wget https://pkgs.tailscale.com/stable/tailscale_1.76.1_amd64.tgz && \
 
 # # Add Tailscale binaries to PATH
 export PATH=$PATH:$(pwd)
-# Create necessary directory for Tailscale
-# mkdir -p /var/run/tailscale
-
-# Start Tailscale
-
-ls 
 
 # tailscaled -no-logs-no-support --socket=/tmp/tailscaled.sock --tun=userspace-networking --outbound-http-proxy-listen=0.0.0.0:2000 --socks5-server=0.0.0.0:2001 &
 tailscaled -no-logs-no-support --socket=/tmp/tailscaled.sock --tun=userspace-networking --socks5-server=localhost:1055 &
