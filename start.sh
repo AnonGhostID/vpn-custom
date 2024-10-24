@@ -1,11 +1,12 @@
 #!/bin/sh
 
-# Download and extract Tailscale
-wget https://pkgs.tailscale.com/stable/tailscale_1.76.1_amd64.tgz && \
-    tar xzf tailscale_1.76.1_amd64.tgz --strip-components=1
+# # Download and extract Tailscale
+# wget https://pkgs.tailscale.com/stable/tailscale_1.76.1_amd64.tgz && \
+#     tar xzf tailscale_1.76.1_amd64.tgz --strip-components=1
 
-# Add Tailscale binaries to PATH
-export PATH=$PATH:$(pwd)
+# # Add Tailscale binaries to PATH
+# export PATH=$PATH:$(pwd)
+
 
 # Create necessary directory for Tailscale
 mkdir -p /var/run/tailscale
