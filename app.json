@@ -1,0 +1,12 @@
+{
+    "name": "Heroku VPN",
+    "description": "Easily spinup an ephemeral VPN on heroku using Tailscale under the hood",
+    "repository": "https://github.com/x0rzavi/ephemeral-vpn",
+    "logo": "https://raw.githubusercontent.com/x0rzavi/ephemeral-vpn/main/assets/Tailscale-AppIcon.png",
+    "env": {
+        "TAILSCALE_AUTHKEY": {
+          "description": "Tailscale pre-authentication key to be used for non-interactive login.",
+          "required": "true"
+        }
+    }
+}
