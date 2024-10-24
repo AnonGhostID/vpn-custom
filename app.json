@@ -7,10 +7,6 @@
         "TAILSCALE_AUTHKEY": {
           "description": "Tailscale pre-authentication key to be used for non-interactive login.",
           "required": "true"
-        },
-        "PROJECT_DIR": {
-          "description": "directory",
-          "required": "true"
         }
     }
 }
